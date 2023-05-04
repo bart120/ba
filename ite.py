@@ -10,6 +10,12 @@
 ##for n in t:
 ##    print(n)
 
+def est_dans_tableau(tableau, element_a_trouver):
+    for element in tableau:
+        if element == element_a_trouver:
+            return True
+    return False
+
 fruits = ['kiwi', 'mangue', 'orange']
 
 #for f in fruits:
@@ -20,12 +26,9 @@ for i in range(3, 5):
     print(fruits[i])
 for i in range(0, 5):
     nouveau_fruit = input('Nouveau fruit {} ?'.format(i+1))
-    test = False
-    for element in fruits:
-        if element == nouveau_fruit:
-            print("Le fruit {} est déjà connu.".format(nouveau_fruit))
-            test = True
-    if(test == False)
+    if(est_dans_tableau(fruits, nouveau_fruit)):
+        print("Le fruit {} est déjà connu.".format(nouveau_fruit))
+    else:
         fruits.append(nouveau_fruit)
 print(fruits)
     

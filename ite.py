@@ -30,5 +30,6 @@ for i in range(0, 5):
         print("Le fruit {} est déjà connu.".format(nouveau_fruit))
     else:
         fruits.append(nouveau_fruit)
+fruits.sort()
 print(fruits)
     
